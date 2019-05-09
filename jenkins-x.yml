@@ -1,0 +1,11 @@
+env:
+- name: DEPLOY_NAMESPACE
+  value: prod
+pipelineConfig:
+  agent: {}
+  env:
+  - name: DEPLOY_NAMESPACE
+    value: prod
+  - name: CHART_REPOSITORY
+    value: http://chartmuseum.jx.k8s-staging.lab.vi.local
+  pipelines: {}
